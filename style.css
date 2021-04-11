@@ -1,0 +1,173 @@
+body {
+  /* background-image: linear-gradient(to bottom right, #f2faad, #ddf000);
+   */
+  background-image: url("bg3.jfif");
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 7vh;
+}
+.heading {
+  padding: 1vw;
+  font-size: 10vh;
+  color: aliceblue;
+
+  text-align: center;
+  text-decoration: blanchedalmond;
+}
+.pig {
+  width: 15vh;
+}
+
+.box {
+  position: absolute;
+  margin-top: 3vh;
+  background: white;
+  opacity: 0.4;
+  display: inline;
+  height: 70vh;
+  width: 30vw;
+  text-align: center;
+}
+button {
+  font-size: 60%;
+  position: absolute;
+  border-radius: 2rem;
+  left: 43vw;
+  width: 14%;
+  height: 7%;
+  background: rgb(87, 119, 26);
+  opacity: 1;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(4, 163, 71);
+  color: white;
+}
+
+button:after {
+  content: "";
+  background: #90ee90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.rollDice {
+  top: 60vh;
+}
+.hold {
+  top: 70vh;
+}
+.player1 {
+  left: 19.8vw;
+}
+.player2 {
+  right: 19.8vw;
+}
+
+.net {
+  font-size: 200%;
+}
+.curr {
+  font-size: 200%;
+}
+.hidden {
+  display: none;
+}
+.dice {
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  width: 6vw;
+  height: 13vh;
+
+  background: url("dice-1.png");
+  background-size: cover;
+} /*
+.dice2 {
+  background: url("dice-2.png");
+  background-size: cover;
+}
+.dice3 {
+  background: url("dice-3.png");
+  background-size: cover;
+}
+.dice4 {
+  background: url("dice-4.png");
+  background-size: cover;
+}
+.dice5 {
+  background: url("dice-5.png");
+  background-size: cover;
+}
+.dice6 {
+  background: url("dice-6.png");
+  background-size: cover;
+} */
+.currScore {
+  font-size: 13px;
+}
+/* .totalScore2 {
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+  background-color: rgb(7, 5, 0);
+  color: white;
+  font-size: 50%;
+} */
+.total {
+  background-color: rgba(94, 2, 81, 0.452);
+  color: white;
+  font-size: 50%;
+  position: absolute;
+  top: 15vh;
+  left: 20vh;
+  height: 12vh;
+  width: 10vw;
+  border-radius: 5rem;
+}
+
+.current {
+  background-color: rgb(14, 139, 62);
+  color: white;
+  font-size: 50%;
+  position: absolute;
+  top: 40vh;
+  left: 16vh;
+  height: 12vh;
+  width: 15vw;
+  border-radius: 2rem;
+}
+
+.winMessage {
+  text-align: center;
+  color: white;
+  position: absolute;
+  padding: 5vh;
+  top: 50vh;
+  left: 35vw;
+  width: 30vw;
+
+  border-radius: 2em;
+  font-size: 5vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(61, 0, 43),
+    rgb(158, 9, 109)
+  );
+  opacity: 0.8;
+}
